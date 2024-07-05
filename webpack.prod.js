@@ -15,6 +15,9 @@ module.exports = merge(common, {
       new CssMinimizerPlugin(),
     ],
   },
+  entry: './src/index.js',output: {path: __dirname + '/dist',publicPath: '/',filename: 'bundle.js'},
+ 
+
   resolve: {
     extensions: ['.js', '.jsx'],
     alias: {
